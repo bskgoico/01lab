@@ -19,3 +19,46 @@
     --secondary: #ffffff;
     --alternate: #502bd8;
 }
+
+html {
+    font-size: max(100vw / 1920 * 10);
+}
+
+body {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+section.nav {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+    z-index: 100;
+}
+
+.nav_wrapper {
+    padding: 2rem;
+}
+
+.nav_list {
+    display: inline-flex;
+    gap: 20%;
+}
+
+.nav_list_item {
+    font-size: 20rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+section.transition {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    z-index: 200;
+}
