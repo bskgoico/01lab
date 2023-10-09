@@ -62,3 +62,55 @@ section.transition {
 
     z-index: 200;
 }
+
+.transition_columns {
+    display: flex;
+    width: 100%;
+}
+
+.transition_column {
+    position: relative;
+    width: 20%;
+    border-right: 1px solid #ffffff26;
+
+    height: 100vh;
+    transform: translateY('-101%');
+
+    background-color: var(--alternate);
+}
+
+.transition_column_text {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+
+    height: calc(100% -4rem);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.transition_column_text span {
+    font-size: 6rem;
+}
+
+.transition_element {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 150;
+}
+
+.transition_element h1 {
+    font-size: 40rem;
+    line-height: 0;
+    text-align: center;
+}
